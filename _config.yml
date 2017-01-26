@@ -1,0 +1,12 @@
+# Site settings
+title: Python Canarias
+email: info@pythoncanarias.es
+description: "Grupo de Usuarios de Python de las Islas Canarias, Tenerife"
+baseurl: ""
+url: "http://pythoncanarias.es"
+# twitter_username: jekyllrb
+# github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+permalink: pretty

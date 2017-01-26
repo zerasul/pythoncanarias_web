@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <p>Somos un grupo de entusiastas del lenguaje de programación Python</p>
+  <p>Nuestra proxima cita será el pyday que celebraremos el dia 99 de marzo de 2017. <a href="/pyday/2017/">Más información</a></p>
+
+  <h1>Noticias</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
